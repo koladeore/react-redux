@@ -21,7 +21,6 @@ import * as Sentry from '@sentry/browser';
 import { logException } from './data/config';
 
 Sentry.init({dsn: process.env.DSN_KEY});
-console.log(process.env.DSN_KEY);
 
 logException(new Error('Incomplete Data!'), {
     email: 'koladeore@gmail.com'

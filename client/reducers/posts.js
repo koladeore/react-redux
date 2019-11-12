@@ -4,7 +4,6 @@
 function posts(state = [], action) {
     switch(action.type){
         case 'INCREMENT_LIKES':
-            console.log("increment like!!!");
             // return the updated state
             const i = action.index;
             return [
